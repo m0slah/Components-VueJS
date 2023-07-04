@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <p>The User is {{ age }} years old</p>
   </div>
 </template>
