@@ -1,7 +1,7 @@
 <template>
   <h1>Hey!</h1>
   <Greeting></Greeting>
-  <User></User>
+  <User :age="age"></User>
 </template>
 
 <script>
@@ -14,5 +14,10 @@ export default {
     Greeting,
     User,
   },
+  data() {
+    return {
+      age: 22,
+    }
+  }
 };
 </script>
