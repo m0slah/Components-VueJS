@@ -4,17 +4,17 @@
 
 <script>
 export default {
-    name: 'Greeting',
-    data() {
-        return {
-            message:'Hello Vue!'
-        }
-    }
-}
+  name: "Greeting",
+  data() {
+    return {
+      message: "Hello Vue!",
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
-h1:hover{
-    color: darken($color: #cc4444, $amount: 15%);
+h1:hover {
+  color: darken($color: #cc4444, $amount: 15%);
 }
 </style>
