@@ -1,9 +1,7 @@
 <template>
   <h1>Hey!</h1>
-  <button type="button" @click="age++">Update Age</button>
-
-  <Greeting :age="age"></Greeting>
-  <User :age="age"></User>
+  <Greeting :age="age" @age-change="age++"></Greeting>
+  <User :age="age" @age-change="UpdateAge"></User>
 </template>
 
 <script>
@@ -18,8 +16,13 @@ export default {
   },
   data() {
     return {
-      age: 22,
-    }
-  }
+      age: 20,
+    };
+  },
+  methods: {
+    UpdateAge(num) {
+      this.age += num; 
+    },
+  },
 };
 </script>
